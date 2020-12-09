@@ -1,0 +1,16 @@
+Asercje:
+assertTrue sprawdza czy przekazany argument to true,
+assertFalse sprawdza czy przekazany argument to false,
+assertNull sprawdza czy przekazany argument to null,
+assertNotNull sprawdza czy przekazany argument nie jest nullem,
+assertEquals przyjmuje dwa parametry wartość oczekiwaną i wartość rzeczywistą, jeśli są różne rzuca wyjątek,
+assertNotEquals przyjmuje dwa parametry wartość oczekiwaną i wartość rzeczywistą, rzuci wyjątek jeśli są równe.
+
+
+
+
+Adnotacje:
+@BeforeEach -  metoda z tą adnotacją uruchamiana przed każdym testem jednostkowym, pozwala na inicjacje czegos przed kazdym testem,
+@AfterEach – metoda z tą adnotacją uruchamiana po każdym teście jednostkowym, pozwala na „posprzątanie” po teście,
+@AfterClass – metoda statyczna z tą adnotacją uruchamiana jest raz po uruchomieniu wszystkich testów z danej klasy,
+@BeforeClass – metoda statyczna z tą adnotacją uruchamiana jest raz przed uruchomieniem pierwszego testu z danej klasy.
