@@ -1,9 +1,8 @@
 package test;
-
-import main.CarService;
+import main.*;
 import org.junit.jupiter.api.*;
 
-class CarServiceTest {
+class CarServiceTestProb {
 
     private CarService serwis;
 
@@ -25,16 +24,16 @@ class CarServiceTest {
     @Test
     public void analyzeCarByParams_millageNull_throwsIllegalArgumentException(){
 
-        //given
+        //given - przygotowujemy dane testowe
         Integer treadThickness = 5;
         Integer fuelUsage = 3;
         Integer carMillage = null;
         //CarService serwis = new CarService();
 
-        //when
+        //when - wykonujemy test
         //boolean result = serwis.analyzeCarByParams(treadThickness, fuelUsage, carMillage);
 
-        //then
+        //then - sprawdzamy czy rezultat jest taki jak oczekiwany
         Assertions.assertThrows(IllegalArgumentException.class, () -> serwis.analyzeCarByParams(treadThickness, fuelUsage, carMillage));
     }
 
@@ -170,3 +169,4 @@ class CarServiceTest {
         System.out.flush();
     }
 }
+

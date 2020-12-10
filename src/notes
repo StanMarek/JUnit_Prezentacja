@@ -1,3 +1,19 @@
+
+
+
+Testy muszą spełnić zasady:
+oznaczone znacznikiem @org.junit.Test --> @Test
+oznaczone jako metody publiczne (public)
+zaczynać się od test
+
+
+
+given - przygotowujemy dane testowe
+when - wykonujemy test
+then - sprawdzamy czy rezultat jest taki jak oczekiwany
+
+
+
 Asercje:
 assertTrue sprawdza czy przekazany argument to true,
 assertFalse sprawdza czy przekazany argument to false,
@@ -8,9 +24,11 @@ assertNotEquals przyjmuje dwa parametry wartość oczekiwaną i wartość rzeczy
 
 
 
-
 Adnotacje:
 @BeforeEach -  metoda z tą adnotacją uruchamiana przed każdym testem jednostkowym, pozwala na inicjacje czegos przed kazdym testem,
 @AfterEach – metoda z tą adnotacją uruchamiana po każdym teście jednostkowym, pozwala na „posprzątanie” po teście,
 @AfterClass – metoda statyczna z tą adnotacją uruchamiana jest raz po uruchomieniu wszystkich testów z danej klasy,
 @BeforeClass – metoda statyczna z tą adnotacją uruchamiana jest raz przed uruchomieniem pierwszego testu z danej klasy.
+
+
+
